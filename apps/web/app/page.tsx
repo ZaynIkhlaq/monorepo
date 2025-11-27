@@ -1,6 +1,7 @@
 import Image, { type ImageProps } from "next/image";
 import { Button } from "@repo/ui/button";
 import styles from "./page.module.css";
+import {turborepo} from "@repo/example";
 
 type Props = Omit<ImageProps, "src"> & {
   srcLight: string;
@@ -54,6 +55,7 @@ export default function Home() {
             />
             Deploy now
           </a>
+          <p>{turborepo}</p>
           <a
             href="https://turborepo.com/docs?utm_source"
             target="_blank"
